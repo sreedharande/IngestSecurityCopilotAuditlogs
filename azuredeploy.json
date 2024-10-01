@@ -284,7 +284,7 @@
                         "publisher": "[parameters('publisher')]",                        
                         "workspaceID": "[parameters('workspaceID')]",
                         "workspaceKey": "[concat('@Microsoft.KeyVault(SecretUri=', reference(variables('LogAnalyticsWorkspaceKey')).secretUriWithVersion, ')')]",
-                        "WEBSITE_RUN_FROM_PACKAGE": "https://github.com/sreedharande/IngestOffice365AuditLogs/blob/main/IngestOffice365Data.zip?raw=true",                        
+                        "WEBSITE_RUN_FROM_PACKAGE": "https://github.com/sreedharande/IngestSecurityCopilotAuditlogs/blob/main/IngestSecurityCopilotAuditLogs.zip?raw=true",                        
 						"LAUri":"[variables('LogAnaltyicsUri')]",
 						"AzureAADLoginUri":"[variables('AzureAADLoginUri')]",
 						"OfficeLoginUri":"[variables('OfficeLoginUri')]",
