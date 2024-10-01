@@ -17,7 +17,7 @@ The following tasks describe the necessary preparation and configurations steps.
 - How to Use the Activity Logs in Azure Sentinel 
 
 ### Register an application in Azure AD 
-The Azure AD app is later required to use it as service principle for the [Azure Funtion App](https://github.com/Azure/Azure-Sentinel/tree/master/DataConnectors/O365%20Data) app. 
+The Azure AD app is later required to use it as service principle for the [Azure Funtion App](https://github.com/sreedharande/IngestSecurityCopilotAuditlogs) app. 
 
 1. Go to **Azure Active Directory** / **App Registrations**
 2. Create **New Registration**<br>
@@ -39,7 +39,7 @@ The Azure AD app is later required to use it as service principle for the [Azure
 14. Copy the **client Id** from the application properties and paste it somewhere.
 15. Also copy the **tenant Id** from the AAD directory properties blade.
 
-For the deployment of [Azure Funtion App](https://github.com/sreedharande/IngestOffice365AuditLogs), make a note of following settings: 
+For the deployment of [Azure Funtion App](https://github.com/sreedharande/IngestSecurityCopilotAuditlogs), make a note of following settings: 
 - The Azure AD Application ID 
 - The Azure AD Application Secret 
 - The Tenant ID 
@@ -76,9 +76,9 @@ Invoke-WebRequest -Method Post -Headers $headerParams -Uri "https://manage.offic
 Thanks to the published ARM template the deployment of the [Azure Funtion App](https://github.com/sreedharande/IngestOffice365AuditLogs) is done with just a few clicks. 
 1. Click to **Deploy the template / Deploy to Azure** below.
 
-[![Deploy to Azure](https://aka.ms/deploytoazurebutton)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fsreedharande%2FIngestOffice365AuditLogs%2Fmain%2Fazuredeploy.json)
+[![Deploy to Azure](https://aka.ms/deploytoazurebutton)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fsreedharande%2FIngestSecurityCopilotAuditlogs%2Frefs%2Fheads%2Fmain%2Fazuredeploy.json)
 
-[![Deploy to Azure Gov](https://aka.ms/deploytoazuregovbutton)](https://portal.azure.us/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fsreedharande%2FIngestOffice365AuditLogs%2Fmain%2Fazuredeploy.json)
+[![Deploy to Azure Gov](https://aka.ms/deploytoazuregovbutton)](https://portal.azure.us/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fsreedharande%2FIngestSecurityCopilotAuditlogs%2Frefs%2Fheads%2Fmain%2Fazuredeploy.json)
 
 2. Now it is time to use the noted details from previous steps.  
 - Select the right **Subscription**, **Resource Group** and **Region** where you what to deploy the Azure Funtion App.  
@@ -91,4 +91,4 @@ Thanks to the published ARM template the deployment of the [Azure Funtion App](h
 ![Complete](./images/Picture10.png)
 
 # Questions ❓ / Issues 🙋‍♂️ / Feedback 🗨
-Post [here]()
+Post [here](https://github.com/sreedharande/IngestSecurityCopilotAuditlogs/issues)
