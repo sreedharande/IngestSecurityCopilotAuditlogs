@@ -144,28 +144,7 @@
             },
             "kind": "StorageV2",
             "properties": {
-                "networkAcls": {
-                    "bypass": "AzureServices",
-                    "virtualNetworkRules": [
-                    ],
-                    "ipRules": [
-                    ],
-                    "defaultAction": "Deny"
-                },
-                "supportsHttpsTrafficOnly": true,
-                "encryption": {
-                    "services": {
-                        "file": {
-                            "keyType": "Account",
-                            "enabled": true
-                        },
-                        "blob": {
-                            "keyType": "Account",
-                            "enabled": true
-                        }
-                    },
-                    "keySource": "Microsoft.Storage"
-                }
+                "publicNetworkAccess": "Disabled"
             }
         },
         {
